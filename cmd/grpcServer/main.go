@@ -1,4 +1,4 @@
-package grpcServer
+package main
 
 import (
 	"database/sql"
@@ -9,6 +9,8 @@ import (
 	"github.com/jonilsonds9/goexpert-modulo-12-grpc/internal/services"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
+
+	_ "github.com/mattn/go-sqlite3"
 )
 
 func main() {
